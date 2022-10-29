@@ -8,6 +8,7 @@
     * [JSON](#json)
     * [CSV](#csv)
     * [DAT](#dat)
+    * [COMING_SOON](#coming_soon)
 <!-- TOC -->
 
 ### GENERAL INFORMATION
@@ -27,7 +28,17 @@
 > ###### 🛠️ CONSTRUCTOR
 > > public XmlRW()
 > ###### 🗃️ METHODS
-> > 
+
+|                                  Modifier & Type                                  | Method & Description                                               |
+|:---------------------------------------------------------------------------------:|:-------------------------------------------------------------------|
+|   [Element](https://docs.oracle.com/javase/7/docs/api/org/w3c/dom/Element.html)   | createRoot(String rootName)                                        |
+|   [Element](https://docs.oracle.com/javase/7/docs/api/org/w3c/dom/Element.html)   | createChild(String childName                                       |
+|   [Element](https://docs.oracle.com/javase/7/docs/api/org/w3c/dom/Element.html)   | createChild(String childName, String attribute, String value)      |
+|   [Element](https://docs.oracle.com/javase/7/docs/api/org/w3c/dom/Element.html)   | createElement(Element child, String field, Sting value)            |
+| [Element\[\]](https://docs.oracle.com/javase/7/docs/api/org/w3c/dom/Element.html) | createElement(Element child, String[] ... valuePairs)              |
+|                                                                                   | exportToXml(String fileName, int indentSize)                       |
+|                                       void                                        | exportToXml(String fileName, int indentSize, ArrayList<?> objects) |
+
 ```xml
 <?xml version="1.0" encoding="UTF-8" ?>
 <Users>
@@ -63,3 +74,5 @@ Edu,Martorell,188
 > ###### MUSTS
 > > Implement ***[Serializable](https://docs.oracle.com/javase/7/docs/api/java/io/Serializable.html)***
 > ###### METHODS
+
+### COMING_SOON

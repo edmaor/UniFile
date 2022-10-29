@@ -34,35 +34,40 @@ public class XmlRW {
     public void setDocument(Document document) {
         this.document = document;
     }
-    public Element createRoot(String name){
-        Element element = document.createElement(name);
+    public Element createRoot(String rootName){
+        Element element = document.createElement(rootName);
         document.appendChild(element);
         return element;
     }
-    public Element createChild(String name){
-        Element element = document.createElement(name);
+    public Element createChild(String childName){
+        Element element = document.createElement(childName);
         document.getDocumentElement().appendChild(element);
         return element;
     }
-    public Element createChild(String name, String attribute, String value ){
-        Element element = document.createElement(name);
+    public Element createChild(String childName, String attribute, String value ){
+        Element element = document.createElement(childName);
         element.setAttribute(attribute, value);
         document.getDocumentElement().appendChild(element);
         return element;
     }
-    public void createElement(Element child, String field, String value ){
+    public Element createElement(Element child, String field, String value ){
         Element element = document.createElement(field);
         Text text = document.createTextNode(value);
         element.appendChild(text);
         child.appendChild(element);
+        return element;
     }
-    public void createElement(Element child,String[] ... values ){
-        for (String[] value: values) {
+    public Element[] createElement(Element child,String[] ... valuePairs ){
+        Element[] elements = new Element[valuePairs.length];
+        int i = 0;
+        for (String[] value: valuePairs) {
             Element element = document.createElement(value[0]);
             Text text = document.createTextNode(value[1]);
             element.appendChild(text);
             child.appendChild(element);
+            elements[i] = element;
         }
+        return elements;
     }
     public Transformer createTransformer(int indentSize) {
         try {
