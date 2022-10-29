@@ -1,4 +1,5 @@
-# UniFile ![Logo](src/staticfiles/UniFileLogo.png "UniFileLogo")
+<img src="src/staticfiles/UniFileLogo.png" height="24"  ">
+# UniFile
 > 📬 : [edmaor128@gmail.com](mailto:edmaor128@gmial.com)
 
 <!-- TOC -->
