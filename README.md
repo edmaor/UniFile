@@ -1,6 +1,5 @@
-<img src="src/staticfiles/UniFileLogo.png" alt="UniFileLogo" height="24" />
 
-# UniFile
+# UniFile <img src="src/staticfiles/UniFileLogo.png" alt="UniFileLogo" height="24" />
 > 📬 : [edmaor128@gmail.com](mailto:edmaor128@gmial.com)
 
 <!-- TOC -->
