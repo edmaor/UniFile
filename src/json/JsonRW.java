@@ -1,2 +1,4 @@
-package json;public class JsonRW {
+package json;
+
+public class JsonRW {
 }

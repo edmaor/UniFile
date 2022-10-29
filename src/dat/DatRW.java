@@ -1,14 +1,9 @@
 package dat;
 
-import org.jetbrains.annotations.NotNull;
-
-import java.io.EOFException;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.ObjectInputStream;
+import java.io.*;
 import java.util.ArrayList;
 
-public class DatWriter {
+public class DatRW {
     public static ArrayList<Object> importDat(String importFile) {
         Boolean end = true;
         ArrayList<Object> objects = new ArrayList<>();
@@ -23,6 +18,17 @@ public class DatWriter {
             throw new RuntimeException(e);
         }
         return objects;
+    }
 
+    public static void exportToDat (String outputFile, ArrayList<?> exports){
+        try {
+            ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(outputFile));
+            for (Object o : exports) {
+                oos.writeObject(o);
+            }
+            oos.close();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 }
