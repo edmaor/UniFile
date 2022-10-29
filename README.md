@@ -12,7 +12,7 @@
 ```xml
 <?xml version="1.0" encoding="UTF-8" ?>
 <Users>
-    <User id = "1">
+    <User>
         <firstName>Edu</firstName>
         <lastName>Martorell</lastName>
         <height>188</height>
@@ -23,10 +23,15 @@
 ### JSON
 ```json
 [{
-  
+  "firstName" : "Edu",
+  "lastName" : "Martorell",
+  "height" : 188
 }]
 ```
 
 ### CSV
+```csv
+Edu,Martorell,188
+```
 
 ### DAT
