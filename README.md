@@ -1,5 +1,4 @@
-
-# UniFile <img src="src/staticfiles/UniFileLogo.png" alt="UniFileLogo" height="24" />
+# UniFile
 > 📬 : [edmaor128@gmail.com](mailto:edmaor128@gmial.com)
 
 <!-- TOC -->
@@ -57,6 +56,10 @@
 ### JSON
 > ###### MUSTS
 > ###### METHODS
+
+| Modifier & Type | Method & Description |
+|-----------------|----------------------|
+|                 |                      |
 
 ```json
 [{
