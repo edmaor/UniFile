@@ -79,6 +79,8 @@ public class XmlRW {
             throw new RuntimeException(tce);
         }
     }
+
+    public ArrayList<?> importXml(String inputFile){return null;}
     public void exportToXml(String outputFile, int indentSize){
         try {
             FileWriter fw = new FileWriter(outputFile);

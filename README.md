@@ -1,5 +1,5 @@
 # UniFile
-> 📬 [edmaor128@gmail.com](mailto:edmaor128@gmial.com)
+> 📬 : [edmaor128@gmail.com](mailto:edmaor128@gmial.com)
 
 <!-- TOC -->
 * [UniFile](#unifile)
@@ -8,7 +8,6 @@
     * [JSON](#json)
     * [CSV](#csv)
     * [DAT](#dat)
-    * [COMING_SOON](#coming_soon)
 <!-- TOC -->
 
 ### GENERAL INFORMATION
@@ -25,21 +24,21 @@
 
 ### XML
 > ###### MUSTS
-> ###### 🛠️ CONSTRUCTOR
+> ###### 🛠️: CONSTRUCTOR
 > > public XmlRW()
-> ###### 🗃️ METHODS
+> ###### 📚️: METHODS
 
-|                                           Modifier & Type                                           | Method & Description                                               |
-|:---------------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------|
-|  [Document](https://docs.oracle.com/en/java/javase/17/docs/api/java.xml/org/w3c/dom/Document.html)  | getDocument()                                                      |
-|                                                void                                                 | setDocument()                                                      |
-|   [Element](https://docs.oracle.com/en/java/javase/17/docs/api/java.xml/org/w3c/dom/Element.html)   | createRoot(String rootName)                                        |
-|   [Element](https://docs.oracle.com/en/java/javase/17/docs/api/java.xml/org/w3c/dom/Element.html)   | createChild(String childName                                       |
-|   [Element](https://docs.oracle.com/en/java/javase/17/docs/api/java.xml/org/w3c/dom/Element.html)   | createChild(String childName, String attribute, String value)      |
-|   [Element](https://docs.oracle.com/en/java/javase/17/docs/api/java.xml/org/w3c/dom/Element.html)   | createElement(Element child, String field, Sting value)            |
-| [Element\[\]](https://docs.oracle.com/en/java/javase/17/docs/api/java.xml/org/w3c/dom/Element.html) | createElement(Element child, String[] ... valuePairs)              |
-|                                                void                                                 | exportToXml(String fileName, int indentSize)                       |
-|                                                void                                                 | exportToXml(String fileName, int indentSize, ArrayList<?> objects) |
+|                                           Modifier & Type                                           | Method & Description                                                   |
+|:---------------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------|
+|  [Document](https://docs.oracle.com/en/java/javase/17/docs/api/java.xml/org/w3c/dom/Document.html)  | **getDocument()**                                                      |
+|                                                void                                                 | **setDocument()**                                                      |
+|   [Element](https://docs.oracle.com/en/java/javase/17/docs/api/java.xml/org/w3c/dom/Element.html)   | **createRoot(String rootName)**                                        |
+|   [Element](https://docs.oracle.com/en/java/javase/17/docs/api/java.xml/org/w3c/dom/Element.html)   | **createChild(String childName)**                                      |
+|   [Element](https://docs.oracle.com/en/java/javase/17/docs/api/java.xml/org/w3c/dom/Element.html)   | **createChild(String childName, String attribute, String value)**      |
+|   [Element](https://docs.oracle.com/en/java/javase/17/docs/api/java.xml/org/w3c/dom/Element.html)   | **createElement(Element child, String field, Sting value)**            |
+| [Element\[\]](https://docs.oracle.com/en/java/javase/17/docs/api/java.xml/org/w3c/dom/Element.html) | **createElement(Element child, String[] ... valuePairs)**              |
+|                                                void                                                 | **exportToXml(String fileName, int indentSize)**                       |
+|                                                void                                                 | **exportToXml(String fileName, int indentSize, ArrayList<?> objects)** |
 
 ```xml
 <?xml version="1.0" encoding="UTF-8" ?>
@@ -68,6 +67,13 @@
 > ###### MUSTS
 > ###### METHODS
 
+|                                            Modifier & Type                                            | Method & Description                                  |
+|:-----------------------------------------------------------------------------------------------------:|-------------------------------------------------------|
+|                                                String                                                 | objectToCsv(Object o)                                 |
+| [ArrayList<?>](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/ArrayList.html) | importCsv(String inputFile, Object importObject)      |
+|                                                 void                                                  | exportToCsv(String outputFile, ArrayList<?> exports)  |
+
+
 ```csv
 Edu,Martorell,188
 ```
@@ -77,4 +83,7 @@ Edu,Martorell,188
 > > Implement ***[Serializable](https://docs.oracle.com/javase/7/docs/api/java/io/Serializable.html)***
 > ###### METHODS
 
-### COMING_SOON
+|                                            Modifier & Type                                            | Method & Description                         |
+|:-----------------------------------------------------------------------------------------------------:|:---------------------------------------------|
+| [ArrayList<?>](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/ArrayList.html) | importDat(String inputFile)                  |
+|                                                 void                                                  | exportToDat(String outputFile, ArrayList<?>) |
