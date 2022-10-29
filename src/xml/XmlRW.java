@@ -86,9 +86,9 @@ public class XmlRW {
         }
     }
 
-    public void exportToXml(String outputFile, int indentSize, ArrayList<?> objects, Object objectClass) throws IllegalAccessException {
-        createRoot(objectClass.getClass().getSimpleName() + 's');
+    public void exportToXml(String outputFile, int indentSize, ArrayList<?> objects) throws IllegalAccessException {
         int i = 0;
+        createRoot(objects.get(i).getClass().getSimpleName() + 's');
         for (Object o: objects){
             Element child = createChild(o.getClass().getSimpleName(),"id", String.valueOf(i));
             for (Field f : o.getClass().getDeclaredFields()){

@@ -24,7 +24,10 @@
 
 ### XML
 > ###### MUSTS
->
+> ###### 🛠️ CONSTRUCTOR
+> > public XmlRW()
+> ###### 🗃️ METHODS
+> > 
 ```xml
 <?xml version="1.0" encoding="UTF-8" ?>
 <Users>
@@ -38,7 +41,8 @@
 
 ### JSON
 > ###### MUSTS
->
+> ###### METHODS
+
 ```json
 [{
   "firstName" : "Edu",
@@ -49,7 +53,8 @@
 
 ### CSV
 > ###### MUSTS
-> 
+> ###### METHODS
+
 ```csv
 Edu,Martorell,188
 ```
@@ -57,3 +62,4 @@ Edu,Martorell,188
 ### DAT
 > ###### MUSTS
 > > Implement ***[Serializable](https://docs.oracle.com/javase/7/docs/api/java/io/Serializable.html)***
+> ###### METHODS
