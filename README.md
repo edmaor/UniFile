@@ -1,4 +1,4 @@
-# UniFile ![Logo](/Users/edu.maor/Desktop/DAM/UniFile/src/staticfiles/UniFileLogo.png "UniFileLogo")
+# UniFile ![Logo](src/staticfiles/UniFileLogo.png "UniFileLogo")
 > 📬 : [edmaor128@gmail.com](mailto:edmaor128@gmial.com)
 
 <!-- TOC -->
