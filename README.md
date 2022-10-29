@@ -1,14 +1,30 @@
 # UniFile
 > 📬 [edmaor128@gmail.com](mailto:edmaor128@gmial.com)
 
- | File Extension | Supports           |
-|----------------|--------------------|
-| [XML](#xml)    | Primitive data     |
-| [JSON](#json)  | In developement    |
-| [CSV](#csv)    | Primitive data     |
-| [DAT](#dat)    | Non-primitive data |
+<!-- TOC -->
+* [UniFile](#unifile)
+    * [GENERAL INFORMATION](#general-information)
+    * [XML](#xml)
+    * [JSON](#json)
+    * [CSV](#csv)
+    * [DAT](#dat)
+<!-- TOC -->
+
+### GENERAL INFORMATION
+
+ |  File Extension | Supports            |
+|----------------:|:--------------------|
+|     [XML](#xml) | Primitive data      |
+|   [JSON](#json) | In development      |
+|     [CSV](#csv) | Primitive data      |
+|     [DAT](#dat) | Non-primitive data  |
+
+> ###### RECOMMENDATIONS
+> > Empty Constructor
 
 ### XML
+> ###### MUSTS
+>
 ```xml
 <?xml version="1.0" encoding="UTF-8" ?>
 <Users>
@@ -21,6 +37,8 @@
 ```
 
 ### JSON
+> ###### MUSTS
+>
 ```json
 [{
   "firstName" : "Edu",
@@ -30,8 +48,12 @@
 ```
 
 ### CSV
+> ###### MUSTS
+> 
 ```csv
 Edu,Martorell,188
 ```
 
 ### DAT
+> ###### MUSTS
+> > Implement ***[Serializable](https://docs.oracle.com/javase/7/docs/api/java/io/Serializable.html)***
