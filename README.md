@@ -1,4 +1,4 @@
-# UniFile
+# UniFile ![Logo](/Users/edu.maor/Desktop/DAM/UniFile/src/staticfiles/UniFileLogo.png "UniFileLogo")
 > 📬 : [edmaor128@gmail.com](mailto:edmaor128@gmial.com)
 
 <!-- TOC -->
@@ -8,6 +8,8 @@
     * [JSON](#json)
     * [CSV](#csv)
     * [DAT](#dat)
+    * [UTILS](#utils)
+          * [CLONER](#cloner)
 <!-- TOC -->
 
 ### GENERAL INFORMATION
@@ -87,3 +89,11 @@ Edu,Martorell,188
 |:-----------------------------------------------------------------------------------------------------:|:---------------------------------------------|
 | [ArrayList<?>](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/ArrayList.html) | importDat(String inputFile)                  |
 |                                                 void                                                  | exportToDat(String outputFile, ArrayList<?>) |
+
+### UTILS
+###### CLONER
+> ###### METHODS
+
+| Modifier & Type | Method & Description  |
+|:---------------:|:----------------------|
+|    Object o     | cloneObject(Object o) |
