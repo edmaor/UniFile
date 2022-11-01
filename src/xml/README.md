@@ -27,13 +27,13 @@
 ###### CreateChild
 ###### CreateElement
 ###### ExportToXml
-> exportToXml(String fileName, int indentSize)
+> exportToXml(String fileName, int indentSize)<br>
 > Takes a file path and an indent size as parameters and transforms the current Document into a xml file.
-> > > fileName -> The path of the file to write. If it doesn't exist it will create it automatically.
-> > indentSize -> The size of the indent in int.
+> * fileName -> The path of the file to write. If it doesn't exist it will create it automatically.
+> * indentSize -> The size of the indent in int.
 ###### ListToXml
 > listToXml(String _fileName_, int _indentSize_, ArrayList<?> _objects_)
 > Takes a list of objects, a file path and an indent as parameters and transforms them into a xml file.
-> > fileName -> The path of the file to write. If it doesn't exist it will create it automatically.
-> > indentSize -> The size of the indent in int.
-> > objects -> The list of objects to transform to xml.
+> * fileName -> The path of the file to write. If it doesn't exist it will create it automatically.
+> * indentSize -> The size of the indent in int.
+> * objects -> The list of objects to transform to xml.
