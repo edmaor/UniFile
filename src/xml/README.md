@@ -20,6 +20,11 @@
         <firstName>Edu</firstName> <!-- Element -->
         <lastName>Martorell</lastName> <!-- Element -->
         <height>188</height> <!-- Element -->
+        <birthDate>
+            <year>2003</year>
+            <month>12</month>
+            <day>8</day>
+        </birthDate>
     </User>
 </Users>
 ```
