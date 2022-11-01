@@ -18,4 +18,3 @@ user2.setName("Victor")
 system.out.println(user2.getName()) -> Victor
 system.out.println(user1.getName()) -> Victor
 ```
-<img src="src/staticfiles/javaCopy1.png" height="64px">
