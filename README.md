@@ -35,6 +35,7 @@
 |:---------------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------|
 |  [Document](https://docs.oracle.com/en/java/javase/17/docs/api/java.xml/org/w3c/dom/Document.html)  | **getDocument()**                                                                               |
 |                                                void                                                 | **setDocument()**                                                                               |
+|                                                void                                                 | [clearDocument](src/xml/README.md#cleardocument)                                                |
 |   [Element](https://docs.oracle.com/en/java/javase/17/docs/api/java.xml/org/w3c/dom/Element.html)   | **createRoot(String rootName)**                                                                 |
 |   [Element](https://docs.oracle.com/en/java/javase/17/docs/api/java.xml/org/w3c/dom/Element.html)   | **createChild(String childName)**                                                               |
 |   [Element](https://docs.oracle.com/en/java/javase/17/docs/api/java.xml/org/w3c/dom/Element.html)   | **createChild(String childName, String attribute, String value)**                               |

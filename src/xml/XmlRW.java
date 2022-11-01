@@ -54,10 +54,23 @@ public class XmlRW {
         return element;
     }
     public Element createChild(String childName, String attribute, String value ){
-        Element element = document.createElement(childName);
-        element.setAttribute(attribute, value);
-        document.getDocumentElement().appendChild(element);
-        return element;
+        Element child = document.createElement(childName);
+        child.setAttribute(attribute, value);
+        document.getDocumentElement().appendChild(child);
+        return child;
+    }
+    public Element createChild(Object object){
+        Element child = createChild(object.getClass().getSimpleName());
+        for (Field f : object.getClass().getDeclaredFields()){
+            try {
+                f.setAccessible(true);
+                createElement(child, f.getName(), String.valueOf(f.get(object)));
+            } catch (IllegalAccessException e) {
+                throw new RuntimeException(e);
+            }
+        }
+        document.getDocumentElement().appendChild(child);
+        return child;
     }
     public Element createElement(Element child, String field, String value ){
         Element element = document.createElement(field);
@@ -109,7 +122,7 @@ public class XmlRW {
             Element child = createChild(o.getClass().getSimpleName(),"id", String.valueOf(i));
             for (Field f : o.getClass().getDeclaredFields()){
                 f.setAccessible(true);
-                createElement(child, (String)f.getName(), String.valueOf(f.get(o)));
+                createElement(child, f.getName(), String.valueOf(f.get(o)));
             }
             i++;
         }
