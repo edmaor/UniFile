@@ -45,6 +45,9 @@ Creates a child in the document, must have a root.
 > * childName -> The name of the child element.
 > * attribute -> The name of the attribute of the child.
 > * value -> The value of the attribute of the child.
+
+> [Element](https://docs.oracle.com/en/java/javase/17/docs/api/java.xml/org/w3c/dom/Element.html) createChild(Object object) <br>
+> * object -> The object to transform to xml.
 ###### CreateElement
 Creates an element in a child Element
 > [Element](https://docs.oracle.com/en/java/javase/17/docs/api/java.xml/org/w3c/dom/Element.html) createElement(Element child, String field, Sting value)
