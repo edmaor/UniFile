@@ -36,12 +36,13 @@
 |  [Document](https://docs.oracle.com/en/java/javase/17/docs/api/java.xml/org/w3c/dom/Document.html)  | **getDocument()**                                                                               |
 |                                                void                                                 | **setDocument()**                                                                               |
 |                                                void                                                 | [clearDocument](src/xml/README.md#cleardocument)                                                |
-|   [Element](https://docs.oracle.com/en/java/javase/17/docs/api/java.xml/org/w3c/dom/Element.html)   | **createRoot(String rootName)**                                                                 |
-|   [Element](https://docs.oracle.com/en/java/javase/17/docs/api/java.xml/org/w3c/dom/Element.html)   | **createChild(String childName)**                                                               |
-|   [Element](https://docs.oracle.com/en/java/javase/17/docs/api/java.xml/org/w3c/dom/Element.html)   | **createChild(String childName, String attribute, String value)**                               |
-|   [Element](https://docs.oracle.com/en/java/javase/17/docs/api/java.xml/org/w3c/dom/Element.html)   | **createElement(Element child, String field, Sting value)**                                     |
-| [Element\[\]](https://docs.oracle.com/en/java/javase/17/docs/api/java.xml/org/w3c/dom/Element.html) | **createElement(Element child, String[] ... valuePairs)**                                       |
-|                                                void                                                 | **exportToXml(String fileName, int indentSize)**                                                |
+|   [Element](https://docs.oracle.com/en/java/javase/17/docs/api/java.xml/org/w3c/dom/Element.html)   | [createRoot(String rootName)](src/xml/README.md#createroot)                                     |
+|   [Element](https://docs.oracle.com/en/java/javase/17/docs/api/java.xml/org/w3c/dom/Element.html)   | [createChild(String childName)](src/xml/README.md#createchild)                                  |
+|   [Element](https://docs.oracle.com/en/java/javase/17/docs/api/java.xml/org/w3c/dom/Element.html)   | [createChild(String childName, String attribute, String value)](src/xml/README.md#createchild)  |
+|   [Element](https://docs.oracle.com/en/java/javase/17/docs/api/java.xml/org/w3c/dom/Element.html)   | [createChild(Object object)](src/xml/README.md#createchild)                                     |
+|   [Element](https://docs.oracle.com/en/java/javase/17/docs/api/java.xml/org/w3c/dom/Element.html)   | [createElement(Element child, String field, Sting value)](src/xml/README.md#createelement)      |
+| [Element\[\]](https://docs.oracle.com/en/java/javase/17/docs/api/java.xml/org/w3c/dom/Element.html) | [createElement(Element child, String[] ... valuePairs)](src/xml/README.md#createelement)        |
+|                                                void                                                 | [exportToXml(String fileName, int indentSize)](src/xml/README.md#exporttoxml)                   |
 |                                                void                                                 | [listToXml(String fileName, int indentSize, ArrayList<?> objects)](src/xml/README.md#listtoxml) |
 
 ```xml
