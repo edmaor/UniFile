@@ -2,7 +2,7 @@
 > 📬 : [edmaor128@gmail.com](mailto:edmaor128@gmial.com)
 
 <!-- TOC -->
-* [UniFile](#unifile)
+* UniFile
     * [GENERAL INFORMATION](#general-information)
     * [XML](#xml)
     * [JSON](#json)
@@ -24,31 +24,32 @@
 > ###### RECOMMENDATIONS
 > > Empty Constructor
 
-### XML
+### XML 
+> [XML DOCUMENTATION](src/xml/README.md)
 > ###### MUSTS
 > ###### 🛠️: CONSTRUCTOR
 > > public XmlRW()
 > ###### 📚️: METHODS
 
-|                                           Modifier & Type                                           | Method & Description                                                   |
-|:---------------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------|
-|  [Document](https://docs.oracle.com/en/java/javase/17/docs/api/java.xml/org/w3c/dom/Document.html)  | **getDocument()**                                                      |
-|                                                void                                                 | **setDocument()**                                                      |
-|   [Element](https://docs.oracle.com/en/java/javase/17/docs/api/java.xml/org/w3c/dom/Element.html)   | **createRoot(String rootName)**                                        |
-|   [Element](https://docs.oracle.com/en/java/javase/17/docs/api/java.xml/org/w3c/dom/Element.html)   | **createChild(String childName)**                                      |
-|   [Element](https://docs.oracle.com/en/java/javase/17/docs/api/java.xml/org/w3c/dom/Element.html)   | **createChild(String childName, String attribute, String value)**      |
-|   [Element](https://docs.oracle.com/en/java/javase/17/docs/api/java.xml/org/w3c/dom/Element.html)   | **createElement(Element child, String field, Sting value)**            |
-| [Element\[\]](https://docs.oracle.com/en/java/javase/17/docs/api/java.xml/org/w3c/dom/Element.html) | **createElement(Element child, String[] ... valuePairs)**              |
-|                                                void                                                 | **exportToXml(String fileName, int indentSize)**                       |
-|                                                void                                                 | **exportToXml(String fileName, int indentSize, ArrayList<?> objects)** |
+|                                           Modifier & Type                                           | Method & Description                                                                            |
+|:---------------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------|
+|  [Document](https://docs.oracle.com/en/java/javase/17/docs/api/java.xml/org/w3c/dom/Document.html)  | **getDocument()**                                                                               |
+|                                                void                                                 | **setDocument()**                                                                               |
+|   [Element](https://docs.oracle.com/en/java/javase/17/docs/api/java.xml/org/w3c/dom/Element.html)   | **createRoot(String rootName)**                                                                 |
+|   [Element](https://docs.oracle.com/en/java/javase/17/docs/api/java.xml/org/w3c/dom/Element.html)   | **createChild(String childName)**                                                               |
+|   [Element](https://docs.oracle.com/en/java/javase/17/docs/api/java.xml/org/w3c/dom/Element.html)   | **createChild(String childName, String attribute, String value)**                               |
+|   [Element](https://docs.oracle.com/en/java/javase/17/docs/api/java.xml/org/w3c/dom/Element.html)   | **createElement(Element child, String field, Sting value)**                                     |
+| [Element\[\]](https://docs.oracle.com/en/java/javase/17/docs/api/java.xml/org/w3c/dom/Element.html) | **createElement(Element child, String[] ... valuePairs)**                                       |
+|                                                void                                                 | **exportToXml(String fileName, int indentSize)**                                                |
+|                                                void                                                 | [listToXml(String fileName, int indentSize, ArrayList<?> objects)](src/xml/README.md#listtoxml) |
 
 ```xml
 <?xml version="1.0" encoding="UTF-8" ?>
-<Users>
-    <User>
-        <firstName>Edu</firstName>
-        <lastName>Martorell</lastName>
-        <height>188</height>
+<Users> <!-- Root -->
+    <User> <!-- Child -->
+        <firstName>Edu</firstName> <!-- Element -->
+        <lastName>Martorell</lastName> <!-- Element -->
+        <height>188</height> <!-- Element -->
     </User>
 </Users>
 ```

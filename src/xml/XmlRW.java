@@ -34,6 +34,15 @@ public class XmlRW {
     public void setDocument(Document document) {
         this.document = document;
     }
+    public void clearDocument(){
+        try {
+            DocumentBuilder builder = DocumentBuilderFactory.newInstance().newDocumentBuilder();
+            this.document = builder.newDocument();
+            this.document.setXmlVersion("1.0");
+        } catch (ParserConfigurationException e) {
+            throw new RuntimeException(e);
+        }
+    }
     public Element createRoot(String rootName){
         Element element = document.createElement(rootName);
         document.appendChild(element);
@@ -93,7 +102,7 @@ public class XmlRW {
         }
     }
 
-    public void exportToXml(String outputFile, int indentSize, ArrayList<?> objects) throws IllegalAccessException {
+    public void listToXml(String outputFile, int indentSize, ArrayList<?> objects) throws IllegalAccessException {
         int i = 0;
         createRoot(objects.get(i).getClass().getSimpleName() + 's');
         for (Object o: objects){
