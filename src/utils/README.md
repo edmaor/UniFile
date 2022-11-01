@@ -10,7 +10,7 @@ User user2 = user1;
 system.out.println(user1.getName()) -> Edu
 system.out.println(user2.getName()) -> Edu
 ```
-<img src="../staticfiles/javaCopy1.png" alt="javaCopy1" height="64px">
+<img src="../staticfiles/javaCopy1.png" alt="javaCopy1" height="64">
 > The result of this is that you now have two users in different variables that point at the same memory unit.<br>
 > The problem of this is that when you change one, you change both.<br>
 > So if you would want to change user2's name to **Victor** you would do this:
