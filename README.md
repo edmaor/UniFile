@@ -98,9 +98,9 @@ Edu,Martorell,188
 |                                                 void                                                  | exportToDat(String outputFile, ArrayList<?>) |
 
 ### UTILS
-###### CLONER
+###### [CLONER](src/utils/README.md#cloner)
 > ###### METHODS
 
-| Modifier & Type | Method & Description  |
-|:---------------:|:----------------------|
-|    Object o     | cloneObject(Object o) |
+| Modifier & Type | Method & Description                                     |
+|:---------------:|:---------------------------------------------------------|
+|    Object o     | [cloneObject(Object o)](src/utils/README.md#cloneobject) |
