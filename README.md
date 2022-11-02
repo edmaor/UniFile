@@ -31,7 +31,7 @@
 > > public XmlRW()
 > ###### 📚️: METHODS
 
-|                                           Modifier & Type                                           | Method & Description                                                                            |
+|                                           Modifier & Type                                           | Method & Link                                                                                   |
 |:---------------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------|
 |  [Document](https://docs.oracle.com/en/java/javase/17/docs/api/java.xml/org/w3c/dom/Document.html)  | **getDocument()**                                                                               |
 |                                                void                                                 | **setDocument()**                                                                               |
@@ -76,11 +76,11 @@
 > ###### MUSTS
 > ###### METHODS
 
-|                                            Modifier & Type                                            | Method & Description                                  |
-|:-----------------------------------------------------------------------------------------------------:|-------------------------------------------------------|
-|                                                String                                                 | objectToCsv(Object o)                                 |
-| [ArrayList<?>](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/ArrayList.html) | importCsv(String inputFile, Object importObject)      |
-|                                                 void                                                  | exportToCsv(String outputFile, ArrayList<?> exports)  |
+|                                            Modifier & Type                                            | Method & Link                                        |
+|:-----------------------------------------------------------------------------------------------------:|------------------------------------------------------|
+|                                                String                                                 | objectToCsv(Object o)                                |
+| [ArrayList<?>](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/ArrayList.html) | importCsv(String inputFile, Object importObject)     |
+|                                                 void                                                  | exportToCsv(String outputFile, ArrayList<?> exports) |
 
 
 ```csv
@@ -92,7 +92,7 @@ Edu,Martorell,188
 > > Implement ***[Serializable](https://docs.oracle.com/javase/7/docs/api/java/io/Serializable.html)***
 > ###### METHODS
 
-|                                            Modifier & Type                                            | Method & Description                         |
+|                                            Modifier & Type                                            | Method & Link                                |
 |:-----------------------------------------------------------------------------------------------------:|:---------------------------------------------|
 | [ArrayList<?>](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/ArrayList.html) | importDat(String inputFile)                  |
 |                                                 void                                                  | exportToDat(String outputFile, ArrayList<?>) |
