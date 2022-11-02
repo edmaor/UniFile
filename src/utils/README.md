@@ -17,6 +17,7 @@ system.out.println(user2.getName()) -> Edu
 ```
 user2.setName("Victor")
 system.out.println(user2.getName()) -> Victor
+
 system.out.println(user1.getName()) -> Victor
 ```
 ---
@@ -28,7 +29,11 @@ system.out.println(user1.getName()) -> Victor
 
 ###### METHODS
 
-| Modifier & Type | Method & Link |
-|:---------------:|:--------------|
-|     Object      |               |
+| Modifier & Type | Method & Link                             |
+|:---------------:|:------------------------------------------|
+|     Object      | [cloneObject(Object _obj_)](#cloneobject) |
 
+###### CloneObject
+Makes a deep copy of an object, it gets stored in a different memory unit.
+> Object cloneObject(Object object)
+> * object -> The object to clone
